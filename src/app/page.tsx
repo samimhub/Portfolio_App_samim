@@ -16,6 +16,7 @@ function page() {
       <Testimonial/>
       </>
     </main>
+    
   )
 }
 
