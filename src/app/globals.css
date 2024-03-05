@@ -16,6 +16,17 @@ body {
 .linearGradient{
   background: linear-gradient(97deg, #4066ff 4%, #2949c6 100%);
 }
+.border-gradient {
+  border-image: linear-gradient(to right, #ff8a00, #e52e71);
+  border-image-slice: 1;
+}
+@layer components{
+  .nav_link{
+    @apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block after:block after:content-['']
+     after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100
+     after:transition after:duration-300 after:origin-center
+  }
+}
 
 @layer utilities {
   .btn_white_rounded  { 
@@ -29,6 +40,9 @@ body {
   }
   .btn_dark_rounded { 
     @apply  border-green-90 bg-green-90 px-6 py-3 text-white stroke-white transition-all hover:bg-black
+  }
+  .btn_indigo_rounded{
+    @apply border-indigo-500 bg-indigo-500 px-6 py-3 hover:bg-cyan-500 shadow-lg shadow-cyan-500/50
   }
   .btn_dark { 
     @apply  rounded-2xl bg-green-90 px-6 py-3 text-white transition-all hover:bg-black

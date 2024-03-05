@@ -5,8 +5,8 @@ import Link from "next/link"
 function Footer() {
   return (
    <section className="max-container padding-container bg-green-90 bg-pattern bg-cover
-   px-6 pt-24 py-8 text-white">
-    <div className="flex flexBetween flex-col gap-14 md:flex-row pb-16">
+   px-6 pt-20 py-8 text-white">
+    <div className="flex flexBetween flex-col gap-10 md:flex-row pb-16">
       <ul>
         {
           FOOTER_LINKS.map((link)=>(
@@ -17,7 +17,7 @@ function Footer() {
           ))
         }
       </ul>
-      <ul className=" regular-14 flex gap-4 text-gray-30">
+      <ul className=" regular-14 flex gap-5 text-gray-30">
         {
           SOCIALS.map((social)=>(
             <Link href={social.href} key={social.key} className="h-10 w-10 border-[0.1rem] border-gray-20
@@ -28,7 +28,7 @@ function Footer() {
         }
       </ul>
     </div>
-    <hr className="border-none outline-none h-[0.01rem] bg-gray-20 my-8"/>
+    <hr className="border-none outline-none h-[0.01rem] bg-gray-20 my-6"/>
     <div className="text-center">This template is made by Samimhub</div>
    </section>
   )

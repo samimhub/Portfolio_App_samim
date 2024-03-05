@@ -1,7 +1,12 @@
 import Link from "next/link"
 import { NAV_LINKS } from "@/Constant"
-import Image from "next/image"
-function Navbar() {
+import { Bars3Icon } from "@heroicons/react/16/solid";
+
+interface Props{
+  openNav:()=>void;
+}
+
+function Navbar({openNav}:Props) {
   return (
     <nav className="padding-container relative z-30 rounded-lg bg-white shadow-xl ring-1 ring-slate-100 py-3">
       <div className="flexBetween max-container">
@@ -12,19 +17,15 @@ function Navbar() {
           {
             NAV_LINKS.map((link)=>(
               <Link href={link.href} key={link.key} className="flexCenter text-[15px] font-[500] text-black
-              hover:bg-blue-500 hover:text-white px-4 py-1 rounded-full cursor-pointer transition-all duration-300">
+              hover:bg-indigo-500 shadow-indigo-500/50 px-4 py-1 rounded-full  cursor-pointer transition-all duration-300">
                  {link.label}
               </Link>
             ))
           }
         </ul>
-        <Image
-        src="menu.svg"
-        alt="menu"
-        width={28}
-        height={28}
-        className="inline-block cursor-pointer lg:hidden"
-        />
+        <div onClick={openNav}> 
+          <Bars3Icon className="W-[2rem] h-[2rem] cursor-pointer lg:hidden "/>
+        </div>
       </div>
   </nav>
   )

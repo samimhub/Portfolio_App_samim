@@ -5,19 +5,19 @@ import Button from "./Button"
 
 function Hero() {
   return (
-   <section className="max-container padding-container flex flec-col flexCenter gap-20 py-10 pb-32 mx-auto
+   <section className="max-container padding-container flex flex-col flexCenter gap-20 py-10 pb-32 mx-auto
    md:gap-28  lg:py-20 lg:flex-row">
     <span className="max-container absolute top-64 left-44 h-[144px] w-[777px] bg-blue-400 rounded-full
     shadow-lg blur-[7rem] -z-10"></span>
-     <div className="flex flex-1 flex-col xl:flexEnd">
+     <div className="flex flex-1 flex-col xl:flexEnd border-5 shadow-lg p-3 rounded-full ">
       <Image
       src="/bg.jpg"
       alt="bg"
-      width={300}
-      height={300}
-      className="w-auto rounded-full "/>
+      width={280}
+      height={280}
+      className="w-auto rounded-full  "/>
     </div>
-    {/*LEFT*/ }
+    {/*Right*/ }
     <div className="relative z-10 flex flex-1 flex-col pt-14">
       <h4 className="bold-20">Hello,</h4>
       <h1 className="bold-48 lg:bold-64 relative"> I'm Samim Aktar</h1>
@@ -25,7 +25,7 @@ function Hero() {
         A {' '}
         <span>
           <Typewriter
-          words={['Full Stack Developer', 'Programmer', 'Code', 'Youtube!']}
+          words={['Marn Stack Developer', 'Full Stack Developer', 'Best Problem Solver....', 'Experienced Developer!']}
           loop={true}
           cursor
           cursorStyle='_'
@@ -64,7 +64,8 @@ function Hero() {
             type="button"
             title="Contact me"
             icon="/arrow-right.svg"
-            variant="btn_white_rounded"
+            variant="btn_indigo_rounded"
+            
             />
           </div>
     </div>

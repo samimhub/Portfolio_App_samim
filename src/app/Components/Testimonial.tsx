@@ -1,7 +1,6 @@
 import {TESTIMONIAL} from "@/Constant"
 import Image from "next/image";
 
-
 function Testimonial() {
   return (
    <section className="max-container padding-container gap-20 py-10 pb-32 md:gap-28
