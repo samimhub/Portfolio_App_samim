@@ -22,13 +22,13 @@ function Hero() {
       <h4 className="bold-20">Hello,</h4>
       <h1 className="bold-48 lg:bold-64 relative"> I'm Samim Aktar</h1>
       <h2 className="bold-28 lg:bold-32 text-[1.8rem capitalize]">
-        A {' '}
+        A {" "}
         <span>
           <Typewriter
           words={['Marn Stack Developer', 'Full Stack Developer', 'Best Problem Solver....', 'Experienced Developer!']}
           loop={true}
           cursor
-          cursorStyle='_'
+          cursorStyle="_"
           typeSpeed={70}
           deleteSpeed={50}
           delaySpeed={1000}
@@ -69,7 +69,6 @@ function Hero() {
             />
           </div>
     </div>
-   
    </section>
   )
 }
