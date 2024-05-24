@@ -20,7 +20,7 @@ function Hero() {
     {/*Right*/ }
     <div className="relative z-10 flex flex-1 flex-col pt-15">
       <h4 className="bold-20">Hello,</h4>
-      <h1 className="bold-48 lg:bold-64 relative"> I'm Samim Aktar</h1>
+      <h1 className="bold-48 lg:bold-52 relative"> I&#39;m Samim Aktar</h1>
       <h2 className="bold-28 lg:bold-32 text-[1.8rem capitalize]">
         A {" "}
         <span>
