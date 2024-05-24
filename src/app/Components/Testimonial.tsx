@@ -1,12 +1,24 @@
 import {TESTIMONIAL} from "@/Constant"
 import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Testimonial() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
    <section className="max-container padding-container gap-20 py-10 pb-32 md:gap-28
    lg:py-20 xl:flex-row">
     <div className="text-center bold-18 uppercase tracking-[1rem] text-blue-500 pb-20">TESTIMONIAL</div>
+    
     <ul className="mt-12 grid gap-14 md:grid-cols-2 lg:grid-cols-3 w-[95%] m-auto">
+      <Slider {...settings}>
       {
         TESTIMONIAL.map((testimonial)=>(
             <TestimonialItem
@@ -16,9 +28,12 @@ function Testimonial() {
             description={testimonial.description}
             />
           ))
-      }
-
+        }
+        </Slider>
     </ul>
+    
+    
+    
    </section>
   )
 }
@@ -29,7 +44,7 @@ type TestimonialItem={
   description:string;
 }
 const TestimonialItem =({title,ImgURL,description}:TestimonialItem) =>{
-return(
+  return(
   
    <li className="relative flex w-full flex-1 flex-col p-6">
     <div className="absolute -top-8">

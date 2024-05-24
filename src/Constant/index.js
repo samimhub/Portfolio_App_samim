@@ -1,11 +1,11 @@
 // NAVIGATION
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
-    { href: '/', key: 'about', label: 'About' },
-    { href: '/', key: 'skills', label: 'Skills' },
-    { href: '/', key: 'portfolio ', label: 'Portfolio' },
-    { href: '/', key: 'testimonial', label: 'Testimonial' },
-    { href: '/', key: 'contact_us', label: 'Contact Us' },
+    { href: '/about', key: 'about', label: 'About' },
+    { href: '/about/skills', key: 'skills', label: 'Skills' },
+    { href: '/portfolio', key: 'portfolio ', label: 'Portfolio' },
+    { href: '/testimonial', key: 'testimonial', label: 'Testimonial' },
+    { href: '/contact_us', key: 'contact_us', label: 'Contact Us' },
   ];
   
   // SKILLS SECTION

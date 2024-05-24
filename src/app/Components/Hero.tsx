@@ -9,16 +9,16 @@ function Hero() {
    md:gap-28  lg:py-20 lg:flex-row">
     <span className="max-container absolute top-64 left-44 h-[144px] w-[777px] bg-blue-400 rounded-full
     shadow-lg blur-[7rem] -z-10"></span>
-     <div className="flex flex-1 flex-col xl:flexEnd border-5 shadow-lg p-3 rounded-full ">
+     <div className="flex flex-1 flex-col flexEnd border-5 shadow-lg p-2 rounded-full lg:rounded-lg ">
       <Image
       src="/bg.jpg"
       alt="bg"
       width={280}
-      height={280}
+      height={250}
       className="w-auto rounded-full  "/>
     </div>
     {/*Right*/ }
-    <div className="relative z-10 flex flex-1 flex-col pt-14">
+    <div className="relative z-10 flex flex-1 flex-col pt-15">
       <h4 className="bold-20">Hello,</h4>
       <h1 className="bold-48 lg:bold-64 relative"> I'm Samim Aktar</h1>
       <h2 className="bold-28 lg:bold-32 text-[1.8rem capitalize]">

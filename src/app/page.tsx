@@ -18,17 +18,15 @@ function page() {
     <>
     <MobileNav nav={nav} closeNav={closeNav}/>
      <Navbar openNav={openNav}/>
-     <main>
+    
       <Hero/>
       <About/>
       <Skills/>
       <Portfolio/>
       <Testimonial/>
-    </main>
-    <Footer/>
-    </>
-   
     
+    <Footer/>
+    </> 
   )
 }
 
