@@ -6,7 +6,7 @@ import MobileNav from '../Components/MobileNav'
 import Skills from '../Components/Skills'
 
 
-function page() {
+function Page() {
     const [nav,setNav] =useState(false)
   const openNav = ()=> setNav(true)
   const closeNav =()=> setNav(false)
@@ -21,4 +21,4 @@ function page() {
   
 
 
-export default page
+export default Page
