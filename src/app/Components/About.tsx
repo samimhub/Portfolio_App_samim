@@ -3,7 +3,7 @@ import Button from "./Button"
 
 function About() {
   return (
-    <section className="max-container padding-container gap-20 py-10 pb-32 lg:py-20 bg-[]f7f7f7]">
+    <section className="max-container padding-container gap-20 py-10 pb-20 lg:py-20 bg-[]f7f7f7]">
       <div className="text-center bold-18 uppercase tracking-[1rem] text-blue-500 pb-20">
       About
       </div>

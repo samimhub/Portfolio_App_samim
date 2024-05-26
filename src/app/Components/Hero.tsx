@@ -20,7 +20,7 @@ function Hero() {
     {/*Right*/ }
     <div className="relative z-10 flex flex-1 flex-col pt-15">
       <h4 className="bold-20">Hello,</h4>
-      <h1 className="bold-48 lg:bold-52 relative"> I&#39;m Samim Aktar</h1>
+      <h1 className="bold-40 lg:bold-52 relative"> I&#39;m Samim Aktar</h1>
       <h2 className="bold-28 lg:bold-32 text-[1.8rem capitalize]">
         A {" "}
         <span>
@@ -35,8 +35,7 @@ function Hero() {
           />
         </span>
         </h2>
-        <p className="regular-16 max-w-[555px] my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Aspernatur cum eligendi suscipit nam molestias consequuntur</p>
+        <p className="regular-16 max-w-[555px] my-4">A passionate and skilled MERN stack developer with a strong foundation in building dynamic and responsive web applications.</p>
           <div className="my-5 flex flex-wrap gap-5">
             <div className="flex items-center gap-2">
               {
