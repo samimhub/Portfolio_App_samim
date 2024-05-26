@@ -10,7 +10,7 @@ function About() {
       <div className="flex flex-col gap-20 md:gap-28 xl:flex-row">
         <div className="flex-1 flexCenter flex-col m-auto">
           <p className="mb-8 text-center">
-            <span className="font-extrabold">Hello Viewers,</span> Welcome to my portfolio website! I'm Samim Aktar, a passionate Web Developer with
+            <span className="font-extrabold">Hello Viewers,</span> Welcome to my portfolio website! I&#39;m Samim Aktar, a passionate Web Developer with
              a strong background in Front End Development as well as MERN Stack Development. With a keen eye for detail and a commitment to excellence, 
              I specialize in developing  innovative solutions and delivering high-quality work.
           </p>
