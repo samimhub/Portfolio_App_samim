@@ -9,7 +9,7 @@ function Hero() {
    md:gap-28  lg:py-20 lg:flex-row">
     <span className="max-container absolute top-64 left-44 h-[144px] w-[777px] bg-blue-400 rounded-full
     shadow-lg blur-[7rem] -z-10"></span>
-     <div className="flex flex-1 flex-col flexEnd border-5 shadow-lg p-2 rounded-full lg:rounded-lg ">
+     <div className="flex flex-1 flex-col flexEnd border-5 shadow-lg p-2 rounded-full lg:rounded-2xl ">
       <Image
       src="/bg.jpg"
       alt="bg"

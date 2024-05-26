@@ -10,10 +10,9 @@ function About() {
       <div className="flex flex-col gap-20 md:gap-28 xl:flex-row">
         <div className="flex-1 flexCenter flex-col m-auto">
           <p className="mb-8 text-center">
-            <span className="font-extrabold">Lorem ipsum</span> dolor, sit amet consectetur adipisicing elit. Expedita, odio nisi incidunt, 
-              vitae amet enim laudantium autem accusantium sit est culpa optio quasi? 
-              Quas nihil ullam dolorum dolores provident quam mollitia ipsam vero possimus ipsa ducimus voluptates laudantium eaque recusandae, 
-              veniam beatae dolorem aperiam fugiat sunt ab facere cum enim ad unde. Facilis, expedita delectus.
+            <span className="font-extrabold">Hello Viewers,</span> Welcome to my portfolio website! I'm Samim Aktar, a passionate Web Developer with
+             a strong background in Front End Development as well as MERN Stack Development. With a keen eye for detail and a commitment to excellence, 
+             I specialize in developing  innovative solutions and delivering high-quality work.
           </p>
           <Button
             type="button"
@@ -23,8 +22,8 @@ function About() {
             />
         </div>
         <div className="flex-1 flexCenter flexCenter">
-          <Image src="/about.png" alt="about" width={333} height={333}
-          className=" w-auto rounded-full shadow-sm"
+          <Image src="/about.jpg" alt="about" width={250} height={250}
+          className=" w-auto rounded-full shadow-md"
           />
         </div>
       </div>
