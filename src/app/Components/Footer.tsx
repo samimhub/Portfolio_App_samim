@@ -41,7 +41,7 @@ function Footer() {
       </ul>
     </div>
     <hr className="border-none outline-none h-[0.01rem] bg-gray-20 my-6"/>
-    <div className="text-center">This template is made by Samimhub</div>
+    <div className="text-center">This Portfolio is made by Samim</div>
    </section>
   )
 }

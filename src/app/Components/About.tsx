@@ -1,6 +1,5 @@
 import Image from "next/image"
-import Button from "./Button"
-import ReadMore from "./ReadMore"
+import ReadMoreButton from "./ReadMoreButton"
 
 function About() {
   return (
@@ -10,7 +9,7 @@ function About() {
       </div>
       <div className="flex flex-col gap-20 md:gap-28 xl:flex-row">
         <div className="flex-1 flexCenter flex-col m-auto bg-sky-100 p-6 rounded-lg shadow-sky-100">
-          <ReadMore/>
+          <ReadMoreButton/>
         </div>
         <div className="flex-1 flexCenter flexCenter">
           <Image src="/about.jpg" alt="about" width={250} height={250}
