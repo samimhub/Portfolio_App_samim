@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Button from "./Button"
+import ReadMore from "./ReadMore"
 
 function About() {
   return (
@@ -8,18 +9,8 @@ function About() {
       About
       </div>
       <div className="flex flex-col gap-20 md:gap-28 xl:flex-row">
-        <div className="flex-1 flexCenter flex-col m-auto">
-          <p className="mb-8 text-center">
-            <span className="font-extrabold">Hello Viewers,</span> Welcome to my portfolio website! I&#39;m Samim Aktar, a passionate Web Developer with
-             a strong background in Front End Development as well as MERN Stack Development. With a keen eye for detail and a commitment to excellence, 
-             I specialize in developing  innovative solutions and delivering high-quality work.
-          </p>
-          <Button
-            type="button"
-            title="Read more"
-            icon="/more.svg"
-            variant="btn_dark_rounded"
-            />
+        <div className="flex-1 flexCenter flex-col m-auto bg-sky-100 p-6 rounded-lg shadow-sky-100">
+          <ReadMore/>
         </div>
         <div className="flex-1 flexCenter flexCenter">
           <Image src="/about.jpg" alt="about" width={250} height={250}

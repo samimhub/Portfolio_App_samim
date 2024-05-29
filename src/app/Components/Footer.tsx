@@ -1,4 +1,4 @@
-import {FOOTER_LINKS ,SOCIALS} from "@/Constant"
+import { CONTACT, CONTACT_LINK, FOOTER_LINKS ,SOCIALS} from "@/Constant"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -6,7 +6,19 @@ function Footer() {
   return (
    <section className="max-container padding-container bg-green-90 bg-pattern bg-cover
    px-6 pt-20 py-8 text-white">
-    <div className="flex flexBetween flex-col gap-10 md:flex-row pb-16">
+    <div className="flex flexBetween flex-col gap-5 md:flex-row pb-16">
+     <ul>
+      {
+        CONTACT.map((contact)=>(
+         <ContactItem
+         key={contact.key}
+         icon={contact.icon}
+         info={contact.info}
+         link={contact.href}
+         />
+        ))
+      }
+     </ul>
       <ul>
         {
           FOOTER_LINKS.map((link)=>(
@@ -34,4 +46,22 @@ function Footer() {
   )
 }
 
+interface ContactItemProps {
+  icon: string;
+  info: string;
+  link:string;
+}
+
+const ContactItem: React.FC<ContactItemProps> = ({ icon, info,link }) => {
+  return (
+    <li className="flex items-center gap-3 py-2">
+      <div>
+      <Link href={link}>
+          <Image src={icon} alt="contact" height={15} width={15} />
+      </Link>
+      </div>
+      <p>{info}</p>
+    </li>
+  );
+};
 export default Footer

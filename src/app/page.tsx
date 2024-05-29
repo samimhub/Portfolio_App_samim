@@ -24,7 +24,6 @@ function Page() {
       <Skills/>
       <Portfolio/>
       <Testimonial/>
-    
     <Footer/>
     </> 
   )

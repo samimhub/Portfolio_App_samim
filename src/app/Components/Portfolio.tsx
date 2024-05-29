@@ -12,7 +12,7 @@ function Portfolio() {
           PORTFOLIO.map((portfolio)=>(
             <PortfolioItem
             key={portfolio.title}
-            ImgURL={portfolio.ImgURL}
+            ImgURL={portfolio.ImgURL}  
             title={portfolio.title}
             description={portfolio.description}
             />

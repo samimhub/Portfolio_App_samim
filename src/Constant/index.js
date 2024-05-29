@@ -2,10 +2,10 @@
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
     { href: '/about', key: 'about', label: 'About' },
-    { href: '/about/skills', key: 'skills', label: 'Skills' },
+    { href: '/skills', key: 'skills', label: 'Skills' },
     { href: '/portfolio', key: 'portfolio ', label: 'Portfolio' },
     { href: '/testimonial', key: 'testimonial', label: 'Testimonial' },
-    { href: '/contact_us', key: 'contact_us', label: 'Contact Us' },
+    { href: '/contact_us', key: 'contact_us', label: 'Contact Me' },
   ];
   
   // SKILLS SECTION
@@ -84,16 +84,26 @@ export const NAV_LINKS = [
   
   // FOOTER SECTION
   export const SOCIALS = [
-    { href: '/', key: 'github', imgURL: '/github.svg' },
-    { href: '/', key: 'instagram', imgURL: '/instagram.svg' },
-    { href: '/', key: 'twitter', imgURL: '/twitter.svg' },
-    { href: '/', key: 'youtube ', imgURL: '/youtube.svg' }
+    { href: 'https://github.com/samimhub', key: 'github', imgURL: '/github.svg' },
+    { href: 'https://www.linkedin.com/in/samim-aktar-431185264/', key: 'linkedin', imgURL: '/linkedin.svg' },
+    { href: 'https://www.instagram.com/samimaktar7421/', key: 'instagram', imgURL: '/instagram.svg' },
+    { href: 'https://x.com/SAMIMAKTAR6907', key: 'twitter', imgURL: '/twitter.svg' },
   ];
   
   export const FOOTER_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
     { href: '/', key: 'skills', label: 'Skills' },
     { href: '/', key: 'portfolio ', label: 'Portfolio' },
+  ];
+  export const CONTACT = [
+    { href: '', key: 'mobile',icon:'/phone.svg', info: '+6296449728' },
+    { href: 'https://mail.google.com/mail/u/0/#inbox?compose=new', key: 'mail',icon:'/mail.svg', info: 'aktarsamim529@gmail.com'},
+    { href: 'https://maps.app.goo.gl/4Djbh9awGcikGDtG9', key: 'address ',icon:'/address.svg', info: 'Kolkata,Murshidabad,West Bengal,742166' },
+  ];
+  export const CONTACT_LINK = [
+    { href: '', key: 'mobile'},
+    { href: 'https://mail.google.com/mail/u/0/#inbox?compose=new', key: 'mail',},
+    { href: 'https://maps.app.goo.gl/4Djbh9awGcikGDtG9', key: 'address '},
   ];
   
   
