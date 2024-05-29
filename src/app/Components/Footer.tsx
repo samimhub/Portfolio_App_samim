@@ -6,8 +6,8 @@ function Footer() {
   return (
    <section className="max-container padding-container bg-green-90 bg-pattern bg-cover
    px-6 pt-20 py-8 text-white">
-    <div className="flex flexBetween flex-col gap-5 md:flex-row pb-16">
-     <ul>
+    <div className="flex flexBetween flex-col gap-10 md:flex-row ">
+     <ul className="pb-7">
       {
         CONTACT.map((contact)=>(
          <ContactItem
@@ -57,7 +57,7 @@ const ContactItem: React.FC<ContactItemProps> = ({ icon, info,link }) => {
     <li className="flex items-center gap-3 py-2">
       <div>
       <Link href={link}>
-          <Image src={icon} alt="contact" height={15} width={15} />
+          <Image src={icon} alt="contact" height={20} width={20} />
       </Link>
       </div>
       <p>{info}</p>

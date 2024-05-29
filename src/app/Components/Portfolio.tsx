@@ -11,9 +11,9 @@ function Portfolio() {
         {
           PORTFOLIO.map((portfolio)=>(
             <PortfolioItem
-            key={portfolio.title}
+            key={portfolio.topic}
             ImgURL={portfolio.ImgURL}  
-            title={portfolio.title}
+            topic={portfolio.topic}
             description={portfolio.description}
             />
           ))
@@ -24,11 +24,11 @@ function Portfolio() {
 }
 
 type PortfolioItem={
-  title:string;
+  topic:string;
   ImgURL:string;
   description:string;
 }
-const PortfolioItem =({title,ImgURL,description}:PortfolioItem) =>{
+const PortfolioItem =({topic,ImgURL,description}:PortfolioItem) =>{
 return(
   <li className="relative flex w-full flex-1 flex-col rounded-2xl border overflow-hidden group">
    
@@ -36,7 +36,7 @@ return(
         <Image src={ImgURL} alt="map" width={444} height={444}/>
       </div>
       <div className="px-6 py-4">
-      <h3 className="bold-18 lg:bold-20 my-4 capitalize">{title}</h3>
+      <h3 className="bold-18 lg:bold-20 my-4 capitalize">{topic}</h3>
       <p className="regular-16 text-gray-30 mb-4">{description}</p>
       <div className=" flex gap-1">
       <Button
