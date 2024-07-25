@@ -5,7 +5,7 @@ import Link from "next/link"
 function Footer() {
   return (
    <section className="max-container padding-container bg-green-90 bg-pattern bg-cover
-   px-6 pt-20 py-8 text-white">
+   px-6 pt-20 py-14 text-white">
     <div className="flex flexBetween flex-col gap-10 md:flex-row ">
      <ul className="pb-7">
       {

@@ -9,6 +9,7 @@ import Navbar from "./Components/Navbar"
 import Portfolio from "./Components/Portfolio"
 import Skills from "./Components/Skills"
 import Testimonial from "./Components/Testimonial"
+import Contact from "./Components/Contact"
 
 function Page() {
   const [nav,setNav] =useState(false)
@@ -24,6 +25,7 @@ function Page() {
       <Skills/>
       <Portfolio/>
       <Testimonial/>
+      <Contact/>
     <Footer/>
     </> 
   )
