@@ -13,9 +13,9 @@ function Testimonial() {
     slidesToScroll: 1,
   };
   return (
-   <section className="max-container padding-container gap-20 py-10 pb-32 md:gap-28
-   lg:py-20 xl:flex-row">
-    <div className="text-center bold-18 uppercase tracking-[1rem] text-blue-500 pb-15">TESTIMONIAL</div>
+   <section className="max-container bg-[#f7f7f7] padding-container gap-20 py-10 pb-40 md:gap-28
+   lg:py-22 xl:flex-row">
+    <div className="text-center bold-18 uppercase tracking-[1rem] text-blue-500 pb-32">TESTIMONIAL</div>
     
     <ul className="mt-12 grid grid-cols-1 gap-14 md:grid-cols-1 text-center w-[100%]">
       <Slider {...settings}>
@@ -46,13 +46,13 @@ type TestimonialItem={
 const TestimonialItem =({title,ImgURL,description}:TestimonialItem) =>{
   return(
   
-   <li className="relative flex flex-col py-5 items-center">
+   <li className="relative flex flex-col py-24 items-center">
     <div className="absolute -top-1  ">
     <Image src={ImgURL} alt="user" width={70} height={70} className="rounded-full shadow-2xl border-4
     border-white "/>
     </div>
     <h3 className="bold-18 lg:bold-20 mt-24 capitalize">{title}</h3>
-    <p className="regualar-16 text-xl line-clamp-2 text-gray-30 my-6">{description}</p>
+    <p className="regualar-16 text-xl line-clamp-2 text-gray-30 my-8 pb-14">{description}</p>
   </li>
 
 )
