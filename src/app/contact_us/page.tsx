@@ -1,10 +1,9 @@
-import Footer from "../Components/Footer"
-
+"use client"
 
 function page() {
   return (
     <div>
-      <Footer/>
+      <Contact/>
     </div>
   )
 }

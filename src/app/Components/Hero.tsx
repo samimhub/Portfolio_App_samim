@@ -11,10 +11,10 @@ function Hero() {
     shadow-lg blur-[7rem] -z-10"></span>
      <div className="flex flex-1 flex-col flexEnd border-5 shadow-lg p-2 rounded-full lg:rounded-2xl ">
       <Image
-      src="/bg.jpg"
+      src="/personal_photo.jpg"
       alt="bg"
       width={280}
-      height={250}
+      height={260}
       className="w-auto rounded-full  "/>
     </div>
     {/*Right*/ }
