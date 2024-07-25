@@ -88,7 +88,7 @@ function Page() {
               </div>
               <label className="text-sm leading-6 text-gray-600" id="switch-1-label">
                 By selecting this, you agree to our
-                <a href="#" className="font-semibold text-indigo-600">privacy&nbsp;policy</a>.
+                <a href="#" className="font-semibold text-indigo-600"> privacy &amp; policy</a>.
               </label>
             </div>
           </div>
