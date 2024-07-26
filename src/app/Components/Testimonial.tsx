@@ -51,8 +51,8 @@ const TestimonialItem =({title,ImgURL,description}:TestimonialItem) =>{
     <Image src={ImgURL} alt="user" width={70} height={70} className="rounded-full shadow-2xl border-4
     border-white "/>
     </div>
-    <h3 className="bold-18 lg:bold-20 mt-24 capitalize">{title}</h3>
-    <p className="regualar-16 text-xl line-clamp-2 text-gray-30 my-8 pb-14">{description}</p>
+    <h3 className="bold-18 lg:bold-20 mt-12 my-14 capitalize">{title}</h3>
+    <p className="regualar-16 text-xl line-clamp-2 text-gray-30 mt-14 pb-14">{description}</p>
   </li>
 
 )
