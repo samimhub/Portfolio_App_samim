@@ -4,7 +4,6 @@ import Swal from 'sweetalert2'
 function Page() {
 
   const [isChecked, setIsChecked] = useState(false);
-  const [isSubmitting,setIsSubmitting] =useState(false)
   const [formData, setFormData] = useState({
     firstname: '',
     lastname: '',
@@ -28,8 +27,6 @@ function Page() {
 
   async function handleSubmit(e: any) {
     e.preventDefault();
-    setIsSubmitting(true)
-
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -52,15 +49,13 @@ function Page() {
         icon: "success"
       });
 
-      setTimeout(() => {
+        // Reset form fields
         setFormData({
           firstname: '',
           lastname: '',
           email: '',
           message: ''
         });
-        setIsSubmitting(false);
-      }, 2000);
     }
   }
   return (
@@ -160,8 +155,7 @@ function Page() {
               type="submit"
               className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              {isSubmitting ? 'Sending' : ' Let&apos;s talk'}
-             
+              Let&apos;s talk
             </button>
           </div>
         </form>
