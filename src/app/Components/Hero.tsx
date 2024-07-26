@@ -1,12 +1,14 @@
 "use client"
+
 import Image from "next/image"
 import { Typewriter } from "react-simple-typewriter"
 import Button from "./Button"
+import Link from "next/link"
 
 function Hero() {
   return (
    <section className="max-container padding-container flex flex-col flexCenter gap-20 py-10 pb-32 mx-auto
-   md:gap-28  lg:py-20 lg:flex-row">
+                       md:gap-28  lg:py-20 lg:flex-row">
     <span className="max-container absolute top-64 left-44 h-[144px] w-[777px] bg-blue-400 rounded-full
     shadow-lg blur-[7rem] -z-10"></span>
      <div className="flex flex-1 flex-col flexEnd border-5 shadow-lg p-2 rounded-full lg:rounded-2xl ">
@@ -61,6 +63,7 @@ function Hero() {
             variant="btn_dark_rounded"
             />
             </a>
+            <Link href='/conatct_us'>
             <Button
             type="button"
             title="Contact me"
@@ -68,6 +71,7 @@ function Hero() {
             variant="btn_indigo_rounded"
             
             />
+            </Link>
           </div>
     </div>
    </section>

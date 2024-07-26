@@ -1,4 +1,13 @@
+import { useState } from "react";
+
 function Page() {
+
+  const [isChecked,setIsChecked]=useState(false);
+
+  const handleToggle = () => {
+    setIsChecked(!isChecked);
+  };
+
     return (
       <div className="isolate bg-[#f7f7f7] px-6 py-20 sm:py-28 lg:px-8 lg:py-14">
 
@@ -10,10 +19,10 @@ function Page() {
         
         {/* Form */}
         <form  className="mx-auto  max-w-xl sm:mt-20">
-        <p className="pb-6 text-xl leading-8 text-gray-600">
+        <p className="pb-6 text-xl sm:text-lg leading-8 text-gray-600">
             Need to get in touch with me? Fill out the From...
           </p>
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2">
             {/* First Name */}
             <div>
               <label className="block text-sm font-semibold leading-6 text-gray-900">First name</label>
@@ -21,8 +30,7 @@ function Page() {
                 <input
                   type="text"
                   name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
+                  autoComplete="off"
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -35,8 +43,7 @@ function Page() {
                 <input
                   type="text"
                   name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
+                  autoComplete="off"
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -74,15 +81,15 @@ function Page() {
               <div className="flex h-6 items-center">
                 <button
                   type="button"
-                  className="flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  role="switch"
-                  aria-checked="false"
+                  className={`flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${isChecked ? 'bg-indigo-600 ring-indigo-600' : 'bg-gray-200 ring-gray-900/5'}`}
+                  aria-checked={isChecked}
                   aria-labelledby="switch-1-label"
+                  onClick={handleToggle}
                 >
                   <span className="sr-only">Agree to policies</span>
                   <span
-                    aria-hidden="true"
-                    className="h-4 w-4 translate-x-0 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"
+                    aria-hidden={true}
+                    className={`h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 transition duration-200 ease-in-out ${isChecked ? 'translate-x-4' : 'translate-x-0'} ring-gray-900/5`}
                   ></span>
                 </button>
               </div>

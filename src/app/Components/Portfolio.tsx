@@ -38,12 +38,12 @@ return(
       <div className="px-6 py-4">
       <h3 className="bold-18 lg:bold-20 my-4 capitalize">{topic}</h3>
       <p className="regular-16 text-gray-30 mb-4">{description}</p>
-      <div className=" flex gap-1">
+      <div className=" flex justify-evenly items-center ">
       <Button
             type="button"
-            title="Read more"
-            icon="/more.svg"
-            variant="btn_dark_rounded"
+            title="Live"
+            icon="/vercel.svg"
+            variant="btn_white_rounded"
             />
             <Button
             type="button"
