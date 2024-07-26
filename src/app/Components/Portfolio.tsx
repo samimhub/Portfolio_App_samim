@@ -1,6 +1,7 @@
 import { PORTFOLIO } from "@/Constant"
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 function Portfolio() {
   return (
@@ -15,6 +16,8 @@ function Portfolio() {
             ImgURL={portfolio.ImgURL}  
             topic={portfolio.topic}
             description={portfolio.description}
+            vercel={portfolio.vercel}
+            github={portfolio.github}
             />
           ))
         }
@@ -27,8 +30,10 @@ type PortfolioItem={
   topic:string;
   ImgURL:string;
   description:string;
+  vercel:string;
+  github:string;
 }
-const PortfolioItem =({topic,ImgURL,description}:PortfolioItem) =>{
+const PortfolioItem =({topic,ImgURL,description,vercel,github}:PortfolioItem) =>{
 return(
   <li className="relative flex w-full flex-1 flex-col rounded-2xl border overflow-hidden group">
    
@@ -39,18 +44,22 @@ return(
       <h3 className="bold-18 lg:bold-20 my-4 capitalize">{topic}</h3>
       <p className="regular-16 text-gray-30 mb-4">{description}</p>
       <div className=" flex justify-evenly items-center ">
+      <Link href={vercel}>
       <Button
             type="button"
             title="Live"
             icon="/vercel.svg"
             variant="btn_white_rounded"
             />
-            <Button
+      </Link>
+      <Link href={github}>
+      <Button
             type="button"
             title="View code"
             icon="/github.svg"
             variant="btn_white_rounded"
             />
+      </Link>
       </div>
     </div>
   </li>

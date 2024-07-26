@@ -19,7 +19,7 @@ function Page() {
         
         {/* Form */}
         <form  className="mx-auto  max-w-xl sm:mt-20">
-        <p className="pb-6 text-xl sm:text-lg leading-8 text-gray-600">
+        <p className="pb-6 text-xl  leading-8 text-gray-600">
             Need to get in touch with me? Fill out the From...
           </p>
           <div className="grid grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2">

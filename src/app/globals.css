@@ -30,7 +30,7 @@ body {
 
 @layer utilities {
   .btn_white_rounded  { 
-    @apply  border-white bg-white px-6 py-3 text-gray-90 hover:bg-transparent
+    @apply  bg-transparent px-6 py-3 text-gray-90 hover:bg-cyan-200 hover:scale-110 duration-300
   }
   .btn_blue_rounded { 
     @apply  border-blue-500 bg-blue-500 px-6 py-3 text-white
@@ -39,10 +39,10 @@ body {
     @apply  rounded-2xl bg-blue-500 px-6 py-3 text-white
   }
   .btn_dark_rounded { 
-    @apply  border-green-90 bg-green-90 px-6 py-3 text-white stroke-white transition-all hover:bg-black
+    @apply  border-green-90 bg-green-90 px-6 py-3 text-white stroke-white transition-all hover:bg-black hover:scale-95 duration-200
   }
   .btn_indigo_rounded{
-    @apply border-indigo-500 bg-indigo-500 px-6 py-3 hover:bg-cyan-500 shadow-lg shadow-cyan-500/50
+    @apply border-indigo-500 bg-indigo-500 px-6 py-3 hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 hover:scale-95 duration-200
   }
   .btn_dark { 
     @apply  rounded-2xl bg-green-90 px-6 py-3 text-white transition-all hover:bg-black

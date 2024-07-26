@@ -54,7 +54,7 @@ function Hero() {
             </div>
             <p className="bold-18 lg:bold-20">1100+ <span className="regular-16 lg;regular-20"></span>Excellent Review</p>
           </div>
-          <div className="flexStart gap-1 pt-6">
+          <div className="flexStart gap-5 pt-6">
             <a href="/Resume/Resume.pdf" download='resume.pdf'>
             <Button
             type="button"
@@ -63,7 +63,7 @@ function Hero() {
             variant="btn_dark_rounded"
             />
             </a>
-            <Link href='/conatct_us'>
+            <Link href='/contact_us'>
             <Button
             type="button"
             title="Contact me"

@@ -33,32 +33,44 @@ export const NAV_LINKS = [
     {
       topic: 'frontend web development',
       ImgURL: '/project1.png',
-      description: 'Frontend development involves crafting the visual elements of a website or application to create'
+      description: 'Frontend development involves crafting the visual elements of a website or application to create',
+      vercel:'https://quickticket-creator-app.vercel.app/',
+      github:'https://github.com/samimhub/ticket_app_samim_creator'
     },
     {
       topic: 'backend web development',
       ImgURL: '/project2.png',
-      description: "Backend development focuses on server-side programming, databases, and server management to create"
+      description: "Backend development focuses on server-side programming, databases, and server management to create",
+      vercel:'https://e-commerce-app-nine-zeta.vercel.app/',
+      github:'https://github.com/samimhub/e-commerce-app'
     },
     {
       topic: 'fullstack web development',
       ImgURL: '/project3.png',
-      description: 'Full-stack development encompasses both frontend and backend programming, enabling developers'
+      description: 'Full-stack development encompasses both frontend and backend programming, enabling developers',
+      vercel:'https://https-samimhub-portfolio-app.vercel.app/',
+      github:'https://github.com/samimhub/Portfolio_App_samim'
     },
     {
       topic: 'frontend web development',
       ImgURL: '/project4.png',
-      description: 'Frontend development involves crafting the visual elements of a website or application to create'
+      description: 'Frontend development involves crafting the visual elements of a website or application to create',
+      vercel:'https://https-samimhub-portfolio-app.vercel.app/',
+      github:'https://github.com/samimhub/Portfolio_App_samim'
     },
     {
       topic: 'backend web development',
       ImgURL: '/project5.png',
-      description: "Backend development focuses on server-side programming, databases, and server management to create"
+      description: "Backend development focuses on server-side programming, databases, and server management to create",
+      vercel:'https://https-samimhub-portfolio-app.vercel.app/',
+      github:'https://github.com/samimhub/Portfolio_App_samim'
     },
     {
       topic: 'fullstack web development',
       ImgURL: '/project6.png',
-      description: 'Full-stack development encompasses both frontend and backend programming, enabling developers'
+      description: 'Full-stack development encompasses both frontend and backend programming, enabling developers',
+      vercel:'https://https-samimhub-portfolio-app.vercel.app/',
+      github:'https://github.com/samimhub/Portfolio_App_samim'
     }
   ];
   
