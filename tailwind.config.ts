@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import type { PluginAPI } from 'tailwindcss';
+
 
 const config: Config = {
   content: [
@@ -42,14 +42,5 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    function ({ addUtilities}:PluginAPI) {
-      addUtilities({
-        '.border-gradient': {
-          borderImage: 'linear-gradient(to right, #ff7e5f, #feb47b) 1',
-        },
-      }, ['responsive', 'hover']);
-    },
-  ],
 };
 export default config;
