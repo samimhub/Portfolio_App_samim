@@ -141,8 +141,9 @@ function Page() {
               <div className="flex h-6 items-center">
                 <button
                   type="button"
-                  className={`flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${isChecked ? 'bg-indigo-600 ring-indigo-600' : 'bg-gray-200 ring-gray-900/5'}`}
+                  role="switch"
                   aria-checked={isChecked}
+                  className={`flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${isChecked ? 'bg-indigo-600 ring-indigo-600' : 'bg-gray-200 ring-gray-900/5'}`}
                   aria-labelledby="switch-1-label"
                   onClick={handleToggle}
                 >

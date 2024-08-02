@@ -5,7 +5,7 @@ import Contact from '../Components/Contact'
 import MobileNav from '../Components/MobileNav'
 import Navbar from '../Components/Navbar'
 
-function page() {
+function Page() {
   
   const [nav,setNav] =useState(false)
   const openNav = ()=> setNav(true)
@@ -19,4 +19,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
