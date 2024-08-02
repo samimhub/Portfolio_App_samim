@@ -8,7 +8,7 @@ type SkillItems={
 function SkillItems({title,icon,description}:SkillItems) {
   return (
    <li className='relative flex w-full flex-1 flex-col items-center text-center shadow-[0_35px_40px_-15px_rgba(0,0,0,0.3)]
-   rounded-2xl p-10 hover:bg-blue-500 group duration-[1100ms] transition'>
+   rounded-2xl p-10 hover:bg-blue-500 group duration-[1100ms] transition hover:scale-105'>
     <div className='rounded-full p-5 bg-blue-500 absolute -top-8 group-hover:bg-black'>
         <Image
          src={icon}

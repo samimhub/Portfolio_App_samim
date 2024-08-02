@@ -2,6 +2,25 @@ import { PORTFOLIO } from "@/Constant"
 import Image from "next/image";
 import Button from "./Button";
 import Link from "next/link";
+import {motion} from "framer-motion"
+
+const fadeUp = (delay:any) => ({
+
+  initial: {
+    opacity: 0,
+    x: 50,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      duration: 0.5,
+      delay: delay,
+    },
+  },
+});
 
 function Portfolio() {
   return (
@@ -35,7 +54,11 @@ type PortfolioItem={
 }
 const PortfolioItem =({topic,ImgURL,description,vercel,github}:PortfolioItem) =>{
 return(
-  <li className="relative flex w-full flex-1 flex-col rounded-2xl border overflow-hidden group">
+  <motion.li 
+  variants={fadeUp(0.6)}
+      initial="initial"
+      animate="animate"
+  className="relative flex w-full flex-1 flex-col rounded-2xl border overflow-hidden group">
    
       <div className="group-hover:scale-110 transition-all duration-1000">
         <Image src={ImgURL} alt="map" width={444} height={444}/>
@@ -62,7 +85,7 @@ return(
       </Link>
       </div>
     </div>
-  </li>
+  </motion.li>
 )
 }
 

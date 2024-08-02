@@ -12,7 +12,7 @@ const ReadMoreButton: React.FC = () => {
 
   return (
     <div className="max-w-xl mx-auto text-center">
-     <p className="mb-8 ">
+     <p className="mb-8 text-xl">
             <span className="font-extrabold text-2xl">Hello Viewers,</span> Welcome to my portfolio website! I&#39;m Samim Aktar, a passionate Web Developer with
              a strong background in Front End Development as well as MERN Stack Development. With a keen eye for detail and a commitment to excellence, 
              I specialize in developing  innovative solutions and delivering high-quality work.

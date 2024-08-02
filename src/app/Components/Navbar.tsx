@@ -3,6 +3,7 @@ import { NAV_LINKS } from "@/Constant"
 import { Bars3Icon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import Link from "next/link";
+import {motion} from "framer-motion"
 
 interface Props{
   openNav:()=>void;
@@ -11,7 +12,11 @@ interface Props{
 function Navbar({openNav}:Props) {
   return (
     <nav className="padding-container relative z-30 rounded-lg bg-white shadow-xl ring-1 ring-slate-100 py-3">
-      <div className="flexBetween max-container">
+      <motion.div
+      initial={{opacity:0,y:-50}}
+      animate={{opacity:1,y:0}}
+      transition={{delay:0.2}}
+      className="flexBetween max-container">
         <Link href="/" className="bold-28 capitalize relative flex ">
           <Image src="/portfolio_logo.png" alt="logo" width={28} height={25}/>
           <span className="text-blue-700">S</span>A
@@ -21,7 +26,7 @@ function Navbar({openNav}:Props) {
             NAV_LINKS.map((link)=>(
             <li  key={link.key}>
                 <Link href={link.href}  className="flexCenter text-[15px] font-[500] text-black
-              hover:bg-indigo-500 shadow-indigo-500/50 px-4 py-1 rounded-full  cursor-pointer transition-all duration-300">
+              hover:bg-indigo-500 shadow-indigo-500/50 px-4 py-1 rounded-full  cursor-pointer transition-all hover:scale-105 duration-400">
                   {link.label}
               </Link>
             </li>
@@ -33,7 +38,7 @@ function Navbar({openNav}:Props) {
         <div onClick={openNav}> 
           <Bars3Icon className="W-[2rem] h-[2rem] cursor-pointer lg:hidden "/>
         </div>
-      </div>
+      </motion.div>
   </nav>
   )
 }

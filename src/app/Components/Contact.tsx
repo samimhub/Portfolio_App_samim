@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Swal from 'sweetalert2'
+import {motion} from "framer-motion"
 
 function Page() {
 
@@ -67,7 +68,11 @@ function Page() {
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="mx-auto  max-w-xl sm:mt-20">
+        <motion.form
+         initial={{y:50,opacity:0}}
+         animate={{y:0,opacity:1}}
+         transition={ {duration:0.8,delay:0.2,ease:"easeInOut"}}
+        onSubmit={handleSubmit} className="mx-auto  max-w-xl sm:mt-20">
           <p className="pb-6 text-lg  leading-8 text-gray-600">
             Need to get in touch with me? Fill out the From...
           </p>
@@ -164,7 +169,7 @@ function Page() {
               Let&apos;s talk
             </button>
           </div>
-        </form>
+        </motion.form>
       </div>
   );
 }
