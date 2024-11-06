@@ -17,8 +17,12 @@ function Navbar({openNav}:Props) {
       animate={{opacity:1,y:0}}
       transition={{delay:0.2}}
       className="flexBetween max-container">
-        <Link href="/" className="bold-28 capitalize relative flex ">
-          <Image src="/portfolio_logo.png" alt="logo" width={28} height={25}/>
+        <Link href="/" className="bold-28 capitalize relative flex">
+          <Image 
+          src="/portfolio_logo.png"
+          alt="logo" width={28} 
+          height={25}
+          className="hover:rotate-180 transition-all duration-300"/>
           <span className="text-blue-700">S</span>A
         </Link>
         <ul className="hidden h-full w-full justify-end gap-6 lg:flex px-6 py-3">

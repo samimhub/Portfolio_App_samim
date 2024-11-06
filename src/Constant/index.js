@@ -48,8 +48,8 @@ export const NAV_LINKS = [
       topic: 'fullstack web development',
       ImgURL: '/project3.png',
       description: 'Full-stack development encompasses both frontend and backend programming, enabling developers',
-      vercel:'https://https-samimhub-portfolio-app.vercel.app/',
-      github:'https://github.com/samimhub/Portfolio_App_samim'
+      vercel:'https://samim-create.vercel.app/',
+      github:'https://github.com/samimhub/my-postable-app'
     },
     {
       topic: 'frontend web development',
