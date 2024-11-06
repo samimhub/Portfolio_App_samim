@@ -49,7 +49,7 @@ function Hero() {
       variants={fadeUp(0.8)}
       initial="initial"
       animate="animate"
-      className="relative z-10 flex flex-1 flex-col pt-15">
+      className="relative z-10 flex flex-1 flex-col pt-15 font-serif">
         <motion.h4 
         variants={fadeUp(0.6)}
         initial="initial"
@@ -70,7 +70,7 @@ function Hero() {
             />
           </span>
         </h2>
-        <p className="regular-16 max-w-[555px] my-4">A passionate and skilled MERN stack developer with a strong foundation in building dynamic and responsive web applications.</p>
+        <p className="regular-16 max-w-[555px] my-4 font-serif">A passionate and skilled MERN stack developer with a strong foundation in building dynamic and responsive web applications.</p>
         <div className="my-5 flex flex-wrap gap-5">
           <div className="flex items-center gap-2">
             {

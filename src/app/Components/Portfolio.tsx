@@ -65,7 +65,7 @@ return(
       </div>
       <div className="px-6 py-4">
       <h3 className="bold-18 lg:bold-20 my-4 capitalize">{topic}</h3>
-      <p className="regular-16 text-gray-30 mb-4">{description}</p>
+      <p className="regular-16 text-gray-30 font-serif mb-4">{description}</p>
       <div className=" flex justify-evenly items-center ">
       <Link href={vercel}>
       <Button
